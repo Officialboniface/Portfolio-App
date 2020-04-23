@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/View1"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@android:color/holo_purple"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/Orange_view"
+        android:layout_width="100dp"
+        android:layout_height="180dp"
+        android:background="@android:color/holo_orange_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/blue_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#0D2EA5"
+        app:layout_constraintLeft_toRightOf="@id/Orange_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/deep_pink_view"
+        android:layout_width="90dp"
+        android:layout_height="180dp"
+        android:background="#FF076A"
+        app:layout_constraintLeft_toRightOf="@id/blue_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="445dp"
+
+        android:background="#333030"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/View1" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Image_Id"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+
+    <TextView
+        android:id="@+id/Name_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/boniface_bassey_akpan"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Image_Id" />
+
+    <TextView
+        android:id="@+id/Second_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/android_developer"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/Name_Tv"
+        app:layout_constraintRight_toRightOf="@id/Name_Tv"
+        app:layout_constraintTop_toBottomOf="@id/Name_Tv" />
+
+    <TextView
+        android:id="@+id/Third_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/i_m_warmed_of_mobile_technologies_n_ideas_maker_curious_and_nature_lover"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Second_Tv" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_facebook"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Third_tv" />
+
+    <TextView
+        android:id="@+id/Facebook_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/facebook"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toLeftOf="@id/facebook"
+        app:layout_constraintRight_toRightOf="@id/facebook"
+        app:layout_constraintTop_toBottomOf="@id/facebook" />
+
+    <ImageView
+        android:id="@+id/Playstore"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/icon_playstor"
+        app:layout_constraintBottom_toBottomOf="@id/facebook"
+        app:layout_constraintLeft_toRightOf="@id/facebook"
+        app:layout_constraintTop_toTopOf="@id/facebook" />
+
+    <TextView
+        android:id="@+id/Playstore_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/playstore"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="@id/Facebook_tv"
+        app:layout_constraintLeft_toLeftOf="@id/Playstore"
+        app:layout_constraintRight_toRightOf="@id/Playstore"
+        app:layout_constraintTop_toTopOf="@id/Facebook_tv" />
+
+    <ImageView
+        android:id="@+id/Github"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/icons_github"
+        app:layout_constraintBottom_toBottomOf="@id/Playstore"
+
+        app:layout_constraintLeft_toRightOf="@id/Playstore"
+        app:layout_constraintTop_toTopOf="@id/Playstore" />
+
+    <TextView
+        android:id="@+id/Github_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/github"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toLeftOf="@id/Github"
+        app:layout_constraintRight_toRightOf="@id/Github"
+        app:layout_constraintTop_toBottomOf="@id/Github" />
+
+    <ImageView
+        android:id="@+id/Bit_bucket"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/bitbucket"
+        app:layout_constraintBottom_toBottomOf="@id/Github"
+        app:layout_constraintLeft_toRightOf="@id/Github"
+        app:layout_constraintTop_toTopOf="@id/Github"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <TextView
+        android:id="@+id/Bit_bucketTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bitbucket"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toLeftOf="@id/Bit_bucket"
+        app:layout_constraintRight_toRightOf="@id/Bit_bucket"
+        app:layout_constraintTop_toBottomOf="@id/Bit_bucket" />
+
+    <ImageView
+        android:id="@+id/Android"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_android"
+        app:layout_constraintLeft_toLeftOf="@id/facebook"
+        app:layout_constraintRight_toRightOf="@id/facebook"
+        app:layout_constraintTop_toBottomOf="@id/Facebook_tv" />
+
+    <TextView
+        android:id="@+id/Android_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/Android"
+        android:textColor="#fff"
+        android:text="@string/android"
+        app:layout_constraintRight_toRightOf="@id/Android"
+        app:layout_constraintTop_toBottomOf="@id/Android" />
+
+    <ImageView
+        android:id="@+id/Youtube"
+        android:layout_width="50dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/icon_youtube"
+        app:layout_constraintBottom_toBottomOf="@id/Android"
+        app:layout_constraintTop_toTopOf="@id/Android"
+        app:layout_constraintLeft_toRightOf="@id/Android"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/Youtube_Tv"
+        android:layout_width="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/youtube"
+        app:layout_constraintRight_toRightOf="@id/Youtube"
+        app:layout_constraintTop_toBottomOf="@id/Youtube"
+        app:layout_constraintLeft_toLeftOf="@id/Youtube"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/Email"
+        android:layout_width="50dp"
+        android:src="@drawable/email_icon"
+        app:layout_constraintRight_toRightOf="@id/Github"
+        app:layout_constraintTop_toBottomOf="@id/Github_Tv"
+        app:layout_constraintLeft_toLeftOf="@id/Github"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/Email_Tv"
+        android:layout_width="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/e_mail"
+        app:layout_constraintTop_toBottomOf="@id/Email"
+        app:layout_constraintRight_toRightOf="@id/Email"
+        app:layout_constraintLeft_toLeftOf="@id/Email"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/Instagram"
+        android:layout_width="50dp"
+        android:src="@drawable/icon_instagram"
+        app:layout_constraintTop_toBottomOf="@id/Bit_bucketTV"
+        app:layout_constraintRight_toRightOf="@id/Bit_bucket"
+        app:layout_constraintLeft_toLeftOf="@id/Bit_bucket"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/Instagram_Tv"
+        android:layout_width="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/instagram"
+        app:layout_constraintTop_toBottomOf="@id/Instagram"
+        app:layout_constraintRight_toRightOf="@id/Instagram"
+        app:layout_constraintLeft_toLeftOf="@id/Instagram"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/LinkedIn"
+        android:layout_width="50dp"
+        app:layout_constraintLeft_toLeftOf="@id/Android"
+        app:layout_constraintRight_toRightOf="@id/Android"
+        android:src="@drawable/icon_linkedin"
+        app:layout_constraintTop_toBottomOf="@id/Android_Tv"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/LinkedIn_Tv"
+        android:layout_width="wrap_content"
+        app:layout_constraintRight_toRightOf="@id/LinkedIn"
+        app:layout_constraintTop_toBottomOf="@id/LinkedIn"
+        android:textColor="#fff"
+        android:text="@string/linkedin"
+        app:layout_constraintLeft_toLeftOf="@id/LinkedIn"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/Google"
+        android:layout_width="50dp"
+        android:src="@drawable/icons_google"
+        app:layout_constraintTop_toBottomOf="@id/Youtube_Tv"
+        app:layout_constraintRight_toRightOf="@id/Youtube"
+        app:layout_constraintLeft_toLeftOf="@id/Youtube"
+        android:layout_height="50dp"/>
+    <TextView
+        android:id="@+id/Google_Tv"
+        android:layout_width="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/google"
+        app:layout_constraintTop_toBottomOf="@id/Google"
+        app:layout_constraintRight_toRightOf="@id/Google"
+        app:layout_constraintLeft_toLeftOf="@id/Google"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/Twitter"
+        android:layout_width="50dp"
+        app:layout_constraintTop_toBottomOf="@id/Email_Tv"
+        android:src="@drawable/icon_twitter"
+        app:layout_constraintRight_toRightOf="@id/Email"
+        app:layout_constraintLeft_toLeftOf="@id/Email"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/Twitter_Tv"
+        android:layout_width="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/twitter"
+        app:layout_constraintTop_toBottomOf="@id/Twitter"
+        app:layout_constraintRight_toRightOf="@id/Twitter"
+        app:layout_constraintLeft_toLeftOf="@id/Twitter"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/Google_plus"
+        android:layout_width="50dp"
+        android:src="@drawable/icons_google_plus"
+        app:layout_constraintLeft_toLeftOf="@id/Instagram"
+        app:layout_constraintRight_toRightOf="@id/Instagram"
+        app:layout_constraintTop_toBottomOf="@id/Instagram_Tv"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/google_plus"
+        app:layout_constraintTop_toBottomOf="@id/Google_plus"
+        app:layout_constraintRight_toRightOf="@id/Google_plus"
+        app:layout_constraintLeft_toLeftOf="@id/Google_plus"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
