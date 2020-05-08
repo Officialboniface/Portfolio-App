@@ -43,7 +43,6 @@ class LoginActivity : AppCompatActivity() {
         }else if (eMail.equals(binding.UsernameEt.text.toString()) && password.equals(binding.passwordEt.text.toString())) {
             // Go to main Activity on validation of the log in details
             Toast.makeText(this, "Login Successful", Toast.LENGTH_LONG).show()
-
             val  intent = Intent(this, MainActivity::class.java)
             intent.putExtra("email", eMail)
             startActivity(intent)

@@ -40,7 +40,7 @@ class SignUpActivity : AppCompatActivity() {
     }
 
     fun goToLogIn(view: View){
-
+        // Check if the text fields are empty
          if (ChooseEmailEt.text.trim().isEmpty()) {
              ChooseEmailEt.error = "Required"
         } else if (choosepasswordEt.text.trim().isEmpty()){
