@@ -15,4 +15,18 @@
     <string name="google">Google</string>
     <string name="twitter">Twitter</string>
     <string name="google_plus">Google Plus</string>
+    <string name="sign_in">Sign In</string>
+    <string name="have_an_account_already">Have an account already?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="choose_password">Choose Password</string>
+    <string name="username">Username</string>
+    <string name="welcome">Welcome</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_account">Don\'t have account?</string>
+    <string name="enter_password">Enter password</string>
+    <string name="choose_a_username">Choose a Username</string>
+    <string name="email">Email Address</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="textview">TextView</string>
 </resources>
